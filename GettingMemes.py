@@ -36,23 +36,12 @@ for url in ImageURLS:
     counter+=1
     for filepath in filepaths:
         if filepath in url:  
-            FoundOrNot.append(counter)
+            FoundOrNot.append("yes")
+        else:
+            FoundOrNot.append('no')
             
 # adding to dataframe
-## 
-
-numOfItems = # number would be excel index number for the last item - 2
-            
-count = [i for i in range(numOfItems)]
-
-Downloaded = []
-
-for number in count: 
-    if number in FoundOrNot:
-        Downloaded.append('yes')
-    else:
-        Downloaded.append('no')
         
-Mdf['Downloaded'] = Downloaded      
+Mdf['Downloaded'] = FoundOrNot     
 
-Mdf.to_csv("Downloaded.csv")
+Mdf.to_csv("CSV/NAME.csv")
