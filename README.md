@@ -1,2 +1,2 @@
 # BlockChainMemes
-Project with Inte Gloerich on Block Chain memetic imaginaries
+Project with [Inte Gloerich](https://integloerich.nl/) on Block Chain memetic imaginaries
