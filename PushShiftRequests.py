@@ -50,4 +50,20 @@ def scrape(utc):
         utc = df["created_utc"].values[-1] # Create new UTC value 
         time.sleep(exponentialbackoff(counter%5)) # Exponential backoff to avoid request blocks
         
+# Readfile function
+def read_file(filename):
+    with open(filename, encoding='utf8') as infile:
+        contents = infile.read()
+    return contents
+
+# Convert small dfs into one 
+dfs = []
+for filename in glob('tempdfs/*.csv'):
+    dfs.append(pd.read_csv(filename))
+
+Mdf = pd.concat(dfs, ignore_index=True)
+
+# converting to .csv
+Mdf.to_csv("MERGE.csv")
+
         
