@@ -11,3 +11,4 @@ Project with [Inte Gloerich](https://integloerich.nl/) on Block Chain memetic im
 4. Get memes from links
 5. Use [Google Cloud Vision](https://cloud.google.com/vision/) for captions
 - Requires existing set up of Google Cloud Vision
+- Can also be done via [4CAT](https://4cat.oilab.nl)
